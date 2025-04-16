@@ -1,0 +1,72 @@
+/* Style for the entire body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000c4;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the main heading */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin: 20px 0;
+  color: #000000;
+}
+
+/* Style for the image gallery section */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Style for each figure */
+figure {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  margin: 0;
+}
+
+/* Style for each image */
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Style for the caption */
+figcaption {
+  padding: 15px;
+  font-size: 14px;
+  background-color: #fafafa;
+  color: #555;
+}
+
+figcaption a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+figcaption a:hover {
+  text-decoration: underline;
+}
+
+/* Add a hover effect to the figures */
+figure:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+/* Add some spacing between the links in the caption */
+figcaption br {
+  margin-bottom: 5px;
+}
