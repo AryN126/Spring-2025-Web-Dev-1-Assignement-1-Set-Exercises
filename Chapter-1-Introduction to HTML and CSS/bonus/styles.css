@@ -1,0 +1,114 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base Body Styles */
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: linear-gradient(145deg, #e0eafc, #cfdef3);
+    color: #222;
+    padding: 40px 20px;
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  header {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px);
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    font-size: 2.8rem;
+    color: #2b2d42;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  /* Main Layout */
+  main {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  /* Section Titles */
+  .section {
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #2b2d42;
+    border-bottom: 2px solid #8d99ae;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+  }
+  
+  /* Card Styles */
+  .card {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(6px);
+    padding: 20px 24px;
+    border-radius: 14px;
+    margin-bottom: 24px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #6c63ff;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .card h3 {
+    font-size: 1.3rem;
+    color: #3f3d56;
+    margin-bottom: 8px;
+  }
+  
+  .card p {
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  /* Code Styling */
+  code {
+    background-color: #f3f3f3;
+    font-family: 'Courier New', monospace;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    color: #111;
+  }
+  
+  pre {
+    background-color: #f9f9f9;
+    padding: 12px 18px;
+    border-radius: 10px;
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: 6px;
+    white-space: pre-wrap;
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 60px;
+  }
+  
