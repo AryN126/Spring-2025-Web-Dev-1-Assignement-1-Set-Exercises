@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(circle, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  overflow: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(90deg, #ff4e50, #f9d423);
+  color: #0f0c29;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px #000;
+  border-bottom: 4px solid #fff;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+}
+
+main {
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.sample-button {
+  background: #111;
+  border: none;
+  border-radius: 2rem;
+  padding: 2rem 1rem;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.sample-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #39ff14, 0 0 50px #39ff14, 0 0 100px #39ff14;
+}
+
+.sample-button.active {
+  background: linear-gradient(135deg, #ff4e50, #f9d423);
+  color: #000;
+  box-shadow: 0 0 20px #f9d423, 0 0 40px #ff4e50;
+}
+
+.sample-number {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #aaa;
+}
+
+.sample-name {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 3px #ff00ff;
+}
+
+.sample-duration {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #ccc;
+}
+
+/* Animated background shapes (optional) */
+body::before {
+  content: '';
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  background: repeating-radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.05),
+    transparent 20px
+  );
+  animation: pulse 30s infinite linear;
+  z-index: 0;
+}
+
+@keyframes pulse {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.05); }
+  100% { transform: rotate(360deg) scale(1); }
+}
